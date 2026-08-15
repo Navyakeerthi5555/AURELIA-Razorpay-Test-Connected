@@ -44,4 +44,4 @@ const vite = await createViteServer({ server: { middlewareMode: true }, appType:
 app.use(vite.middlewares)
 
 const port = Number(process.env.PORT || 5173)
-app.listen(port, () => console.log(`AURELIA running at http://localhost:${port}`))
+app.listen(port, "0.0.0.0", () => console.log(`AURELIA running on port ${port}`))
