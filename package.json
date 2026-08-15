@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server.mjs",
     "build": "tsc -b && vite build",
+    "start": "node --max-old-space-size=256 server.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
