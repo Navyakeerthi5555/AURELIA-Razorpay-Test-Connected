@@ -120,4 +120,13 @@ function razorpayPlugin() {
         }
     };
 }
-export default defineConfig({ plugins: [react(), razorpayPlugin()] });
+export default defineConfig({
+  plugins: [
+    react(),
+    razorpayPlugin(),
+  ],
+
+  server: {
+    allowedHosts: ['aurelia-razorpay-test-connected.onrender.com'],
+  },
+});
